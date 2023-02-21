@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css files/style.css">
+    <link rel="stylesheet" href="css files/all.min.css">
+    <link rel="icon" href="Images/facebook.png">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login">
+        <style>
+            body{
+                background-color: #fff;
+            }
+        </style>
+        <div class="log-left">
+            <h1>facebook</h1>
+            <h2>Recent logins</h2>
+            <p>Click your picture or add an account.</p>
+            <div class="account">
+                <img src="Images/310311719_2913923228910071_8850435597557632917_n.jpg" alt="">
+                <h3>Mustafa</h3>
+            </div>
+        </div>
+        <div class="log-right">
+            <form action="index.html" onsubmit="return formValidate()">
+                <div id="error"></div>
+                <input type="text" name="Email" id="Email" placeholder="Email adress or phone number">
+                <input type="password" name="password" id="password" placeholder="password">
+                <br>
+                <input type="submit" placeholder="Log in">
+            </form>
+            <a class="Forgotten" href="#">Forgotten password?</a>
+            <a class="Creat" href="#">Creat New Account</a>
+        </div>
+    </div>
+    <span class="clock" id="myClockDisplay" onload="showtime()">Clock</span>
+    <div class="container">
+        <h1>Javascript Stop Watch</h1>
+        <p><span id="min">00</span>:<span id="second">00</span>:<span id="tens">00</span></p>
+        <button onclick="show_hide()">Click here</button>
+        <button id="btn-start">Start</button>
+        <button id="btn-stop">Stop</button>
+        <button id="btn-reset"> Reset</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
